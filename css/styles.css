@@ -1,0 +1,305 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: antiquewhite;
+    background-image: url('../img/IMG_0668.JPG');
+  }
+  .image {
+    background-image: url('../img/IMG_0668.JPG');
+    background-size:80vh;
+    background-repeat:no-repeat;
+    height: 500px;
+    background-position: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: #000000;
+    padding: .8rem 1.25rem;
+    z-index: 1000;
+
+    /* .nav-left {
+        justify-self: flex-start;
+    } */
+  }
+
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: .9rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+    text-underline-position: below;
+    text-underline-offset: 3px;
+  }
+  
+  .hero {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+  }
+  
+  .download-button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .download-button:hover {
+    background: black;
+    color: white;
+  }
+  
+  .section {
+    padding: 50px;
+   
+    background-color: black;
+  }
+  
+  .section:nth-of-type(odd) {
+    background-color: black;
+  }
+  
+  .section h2 {
+    margin: 0 0 20px;
+    font-size: 1.5rem;
+  }
+  
+  .section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .footer {
+    position: relative;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: .9rem;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    text-underline-position: below;
+    text-underline-offset: 3px;
+  }
+
+  .skills-section {
+    padding: 50px;
+    background-color: black;
+    color: white; /* Adjust text color for visibility on black background */
+  }
+  
+  .s-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* This will allow cards to wrap to the next line on smaller screens */
+    justify-content: center; /* Centers cards in the container */
+    gap: 20px; /* This creates space between the cards */
+  }
+  
+/* Corrected CSS for .s-card and .w-card */
+.s-card {
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: black;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    margin-bottom: 20px; /* Add some margin to the bottom of each card */
+    /* Remove the duplicate flex property and set a basis */
+    flex-basis: calc(33.33% - 20px); /* Initial width minus the gap */
+    /* You might not need flex-grow: 1 or flex-shrink: 1 here, but adjust if necessary */
+}
+
+/* Responsive design media query adjustment */
+@media (max-width: 800px) {
+    .s-card{
+        /* Each card will take full width of the container minus the padding on smaller screens */
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+  
+  .s-card-image-1 {
+    height: 200px; /* Adjust height as needed */
+    background-image: url('../img/Image\ 1.jpg');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin-bottom: 15px; /* Space between image placeholder and title */
+  }
+
+  .s-card-image-2 {
+    height: 200px; /* Adjust height as needed */
+    background-image: url('../img/Image\ 2.jpg');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin-bottom: 15px; /* Space between image placeholder and title */
+  }
+
+  .s-card-image-3 {
+    height: 200px; /* Adjust height as needed */
+    background-image: url('../img/Image\ 3.jpg');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin-bottom: 15px; /* Space between image placeholder and title */
+  }
+  
+  .s-card-title {
+    margin: 0 0 10px; /* Space between title and text */
+    font-size: 1.25rem; /* Title font size */
+  }
+  
+  .s-card-text {
+    font-size: 1rem; /* Text font size */
+    margin: 0; /* Reset margin */
+  }
+  
+
+/*START OF WORK SECTION CSS*/
+.work-section {
+    padding: 50px;
+    background-color: black;
+    color: white; /* Adjust text color for visibility on black background */
+  }
+  
+  .w-cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* This will allow cards to wrap to the next line on smaller screens */
+    justify-content: left;
+    gap: 20px; /* This creates space between the cards */
+  }
+  
+/* Corrected CSS for .s-card and .w-card */
+.w-card {
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: flex-start; /* Align items to the start of the container */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background: black;
+    color: white;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    width: 100%; /* Take the full width of the container */
+}
+
+@media (max-width: 1200px) {
+    .w-card { flex: 0 0 auto; margin: 10px 0; } /* Adjust the margin as needed */
+}
+
+.w-card-image-1 {
+    background-image: url('../img/fli.jpg');
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 200px; /* Set a fixed width for the image container */
+    height: 200px; /* Set a fixed height for the image container */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px; /* Add some space between the image and the text */
+}
+
+.w-card-image-2 {
+    background-image: url('../img/gcd.png');
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 200px; /* Set a fixed width for the image container */
+    height: 200px; /* Set a fixed height for the image container */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px; /* Add some space between the image and the text */
+}
+
+.w-card-image-3 {
+    background-image: url('../img/psi.jpg');
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 200px; /* Set a fixed width for the image container */
+    height: 200px; /* Set a fixed height for the image container */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px; /* Add some space between the image and the text */
+}
+
+
+  .w-card-title {
+    margin: 0 0 10px; /* Space between title and text */
+    font-size: 1.25rem; /* Title font size */
+  }
+  
+  .w-card-text {
+    font-size: 1rem; /* Text font size */
+    margin: 0; /* Reset margin */
+  }
+
+  .w-card-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* This will allow cards to wrap to the next line on smaller screens */
+    justify-content: center; /* Centers cards in the container */
+    padding-right: 50px;
+}
+
+/*end of work section css*/
+
+.see-more-button {
+    padding: 10px 20px;
+    align-self: center;
+    background: transparent;
+    border: 2px white;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .see-more-button:hover {
+    background: white;
+    color: black;
+  }
