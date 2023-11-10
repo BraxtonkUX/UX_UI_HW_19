@@ -101,11 +101,15 @@ body, html {
   }
   
   .footer {
+    display: flex;
+    justify-content: space-between;
     position: relative;
     background: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
     font-size: 0.8rem;
   }
   
@@ -141,7 +145,7 @@ body, html {
 /* Corrected CSS for .s-card and .w-card */
 .s-card {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background: black;
     color: white;
@@ -166,7 +170,7 @@ body, html {
   .s-card-image-1 {
     height: 200px; /* Adjust height as needed */
     background-image: url('../img/Image\ 1.jpg');
-    background-size: contain;
+    background-size:contain;
     background-repeat:no-repeat;
     background-position: center;
     margin-bottom: 15px; /* Space between image placeholder and title */
@@ -174,7 +178,7 @@ body, html {
 
   .s-card-image-2 {
     height: 200px; /* Adjust height as needed */
-    background-image: url('../img/Image\ 2.jpg');
+    background-image: url('../img/16D5A428-D856-422F-8D61-B669AE2D993A.jpeg');
     background-size: contain;
     background-repeat:no-repeat;
     background-position: center;
@@ -221,7 +225,7 @@ body, html {
     display: flex; /* Enable flexbox */
     align-items: center; /* Align items vertically in the center */
     justify-content: flex-start; /* Align items to the start of the container */
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background: black;
     color: white;
@@ -237,7 +241,7 @@ body, html {
 .w-card-image-1 {
     background-image: url('../img/fli.jpg');
     flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 200px; /* Set a fixed width for the image container */
+    width: 300px; /* Set a fixed width for the image container */
     height: 200px; /* Set a fixed height for the image container */
     background-size: cover; /* Cover the entire container */
     background-repeat: no-repeat;
@@ -248,7 +252,7 @@ body, html {
 .w-card-image-2 {
     background-image: url('../img/gcd.png');
     flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 200px; /* Set a fixed width for the image container */
+    width: 300px; /* Set a fixed width for the image container */
     height: 200px; /* Set a fixed height for the image container */
     background-size: cover; /* Cover the entire container */
     background-repeat: no-repeat;
@@ -259,7 +263,7 @@ body, html {
 .w-card-image-3 {
     background-image: url('../img/psi.jpg');
     flex-shrink: 0; /* Prevent the image from shrinking */
-    width: 200px; /* Set a fixed width for the image container */
+    width: 300px; /* Set a fixed width for the image container */
     height: 200px; /* Set a fixed height for the image container */
     background-size: cover; /* Cover the entire container */
     background-repeat: no-repeat;
